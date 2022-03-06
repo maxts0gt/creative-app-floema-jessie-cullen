@@ -15,12 +15,18 @@ body {
   line-height: 1.25;
   background-color: #fff;
   color: #333;
+
   margin: 40px auto 40px auto;
-  width: 620px;
+  /* width: 620px; */
 }
 
-img {
-  width: 620px;
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -28,6 +34,32 @@ h1 {
   font-style: italic;
 }
 
+header p {
+  max-width: 480px;
+  font-size: 36px;
+  text-align: center;
+}
+
+section {
+  background-color: #f9868d;
+  padding: 200px;
+}
+
+section.dark {
+  background-color: purple;
+}
+
 figure {
   margin: 40px 0;
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  margin: 24px 20% 0 0;
 }
