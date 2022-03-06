@@ -99,5 +99,40 @@ figcaption {
 }
 
 svg {
-  border: red solid 1px
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
+
+path {
+  transform: scale(0);
+  transition: transform 5s;
+}
+
+g.blob.in-view path {
+  transform: scale(1);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: red;
+  background-image: linear-gradient(180deg, #ffffff, #f9868d, #8652ff, #ff4141, #ffffff);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.arrow {
+  width: 40px;
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
