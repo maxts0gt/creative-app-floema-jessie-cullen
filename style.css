@@ -21,6 +21,16 @@
   }
 }
 
+@keyframes hyphen {
+  0% {
+    width: 0.5em
+  }
+
+  100% {
+    width: 1em
+  }
+}
+
 body {
   font-family: Mazius Review;
   font-size: 48px;
@@ -52,7 +62,16 @@ header p {
   max-width: 480px;
   font-size: 36px;
   text-align: center;
-    animation: fadein 0.8s 1.3s both;
+  animation: fadein 0.8s 1.3s both;
+}
+
+header span {
+  background-color: #000;
+  width: 1em;
+  height: 0.02em;
+  display: inline-block;
+  vertical-align: middle;
+  animation: hyphen 2s 1s infinite alternate;
 }
 
 section {
