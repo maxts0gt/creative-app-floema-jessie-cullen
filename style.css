@@ -9,6 +9,18 @@
   src: url('fonts/maziusreview-extraitalic.woff2');
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translate(0, 24px);
+  }
+
+  100% {
+    opacity: 1;
+    translate(0, 0)
+  }
+}
+
 body {
   font-family: Mazius Review;
   font-size: 48px;
@@ -27,6 +39,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  animation: fadein 0.4s 1s both;
 }
 
 h1 {
@@ -38,6 +52,7 @@ header p {
   max-width: 480px;
   font-size: 36px;
   text-align: center;
+    animation: fadein 0.8s 1.3s both;
 }
 
 section {
