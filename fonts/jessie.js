@@ -19,7 +19,7 @@ const fadeArrow = function () {
   arrowTag.style.opacity = 1 - easing(pixels / 250)
 }
 
-const checkBlobs = async () => {
+const checkBlobs = function () {
   const pixels = window.pageYOffset
 
   blobGroups.forEach((blob, index) => {

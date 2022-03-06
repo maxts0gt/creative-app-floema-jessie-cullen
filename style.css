@@ -45,28 +45,26 @@ body {
   font-family: Mazius Review;
   font-size: 48px;
   line-height: 1.25;
-  background-color: #fff;
-  color: #333;
-
-  margin: 40px auto 40px auto;
-  /* width: 620px; */
+  margin: 100vh 0 0 0;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- top: 0;
- left: 0;
-  animation: fadein 0.4s 1s both cubic-bezier(0.9, 0.03, 0.69, 0.22);
 }
 
 h1 {
   font-size: 10vw;
-  font-style: italic;
+    animation: fadein 0.4s 1s both cubic-bezier(0.9, 0.03, 0.69, 0.22);
 }
 
 header p {
@@ -89,9 +87,7 @@ section {
   padding: 200px;
 }
 
-section.dark {
-  background-color: ;
-}
+
 
 figure {
   margin: 40px 0;
@@ -140,10 +136,11 @@ g.blob.in-view path {
 }
 
 .arrow {
-  width: 40px;
+  width: 32px;
   position: fixed;
   bottom: 32px;
   left: 50%;
   transform: translate(-50%, 0);
+  animation: fadein 1.2s 1.3s both cubic-bezier(0.9, 0.03, 0.69, 0.22);
 }
 
